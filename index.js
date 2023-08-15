@@ -51,11 +51,18 @@ console.log(seasonalDrinks);
 // Prompt 7
 // Print all the seasonal drinks with the words "with imported beans" after the item name.
 // For example: "affogato with imported beans"
-const withImportedBeans = () => {
-    for (i = 0; i < drinks.length; i++) {
-        if (drinks === seasonalDrinks) {
-            return `${drinks} with imported beans`;
-        }
-    }
-}
-console.log(withImportedBeans);
+
+//attempted solution:
+// const withImportedBeans = () => {
+//     for (i = 0; i < drinks.length; i++) {
+//         if (drinks === seasonalDrinks) {
+//             return `${drinks} with imported beans`;
+//         }
+//     }
+// }
+// console.log(withImportedBeans);
+
+//solution:
+seasonalDrinks.forEach(drinks => {
+    console.log(`${drinks.name} with imported beans`);
+});
